@@ -1,4 +1,3 @@
-// TrainerContext.js
 import React from "react";
 
 export const TrainerContext = React.createContext();
