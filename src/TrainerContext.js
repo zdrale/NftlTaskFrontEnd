@@ -1,11 +1,12 @@
 import React from "react";
+import { useState } from "react";
 
 export const TrainerContext = React.createContext();
 
 export const TrainerProvider = ({ children }) => {
-  const [trainersNames, setTrainersNames] = React.useState([]);
-  const [trainerAvailability, setTrainerAvailability] = React.useState(null);
-  const [currentTrainer, setCurrentTrainer] = React.useState(null);
+  const [trainersNames, setTrainersNames] = useState([]);
+  const [trainerAvailability, setTrainerAvailability] = useState(null);
+  const [currentTrainer, setCurrentTrainer] = useState(null);
 
   return (
     <TrainerContext.Provider
